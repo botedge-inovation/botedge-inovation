@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
+import Review from "./component/review/Review";
 
 export default function Home() {
   return (
@@ -83,7 +84,14 @@ export default function Home() {
         </h2>
       </div>
 
-      <h1>Student review section</h1>
+      <Review
+        name={"Dattu Sonawane"}
+        stars={4}
+        text={
+          "“Thank you so much for your help! My project is finally complete, and I couldnt have done it without your support. Really happy with the guidance!”"
+        }
+      />
+      <h1>What our Student says</h1>
     </>
   );
 }
